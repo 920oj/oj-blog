@@ -1,6 +1,5 @@
 <template>
   <div class="header bg-white shadow-lg">
-    <Snslink />
     <div class="header-title text-center py-8">
       <h1 class="text-3xl font-bold">
         <nuxt-link to="/">OJ Blog</nuxt-link>
@@ -11,12 +10,7 @@
 </template>
 
 <script>
-import Snslink from '~/components/molecules/Sns-link.vue'
-export default {
-  components: {
-    Snslink,
-  },
-}
+export default {}
 </script>
 
 <style>

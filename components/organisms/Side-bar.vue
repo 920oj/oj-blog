@@ -1,9 +1,16 @@
 <template>
-  <div class="side-bar bg-red-600 h-64 w-full"></div>
+  <div class="side-bar w-full">
+    <Profile />
+  </div>
 </template>
 
 <script>
-export default {}
+import Profile from '~/components/molecules/Profile.vue'
+export default {
+  components: {
+    Profile,
+  },
+}
 </script>
 
 <style>

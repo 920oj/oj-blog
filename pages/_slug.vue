@@ -1,24 +1,43 @@
 <template>
-  <article>
-    <h1>{{data.title}}</h1>
-    <nuxt-content :document="data"></nuxt-content>
-  </article>
+  <div
+    class="index w-full bg-gray-200 md:px-4 lg:px-8 xl:px-32 flex flex-col lg:flex-row box-border"
+  >
+    <ArticleContent :data="article" />
+    <Sidebar />
+  </div>
 </template>
 
 <script>
+import ArticleContent from '~/components/organisms/Article-content.vue'
+import Sidebar from '~/components/organisms/Side-bar.vue'
+import fetchData from '~/lib/fetch'
+
 export default {
-  async asyncData({ $content, params }) {
-    const data = await $content('/', params.slug).fetch()
-    return { data }
+  data() {
+    return {
+      article: '',
+    }
   },
-  mounted() {
-    console.log(this.data)
+  components: {
+    ArticleContent,
+    Sidebar,
+  },
+  async fetch() {
+    console.log(this.$route.params.slug)
+    this.article = await fetchData.getArticle(
+      this.$content,
+      this.$route.params.slug
+    )
   },
   head() {
     return {
-      title: this.data.title,
+      title: this.article.title + ' - OJ Blog',
       meta: [
-        { hid: 'description', name: 'description', content: this.data.title },
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.article.title,
+        },
       ],
     }
   },

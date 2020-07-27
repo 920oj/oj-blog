@@ -13,15 +13,6 @@ export default {
     Articlelist,
     Sidebar,
   },
-  async asyncData({ $store, $content, params }) {
-    const article_list = await $content('/')
-      .only(['title', 'description', 'category', 'eyecatch'])
-      .fetch()
-    return { article_list }
-  },
-  mounted() {
-    console.log(this.article_list)
-  },
 }
 </script>
 

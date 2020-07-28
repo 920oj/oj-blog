@@ -7,7 +7,7 @@
       <div class="box-detail md:mx-4">
         <p>
           <Label>{{category}}</Label>
-          {{createdAt}}
+          {{postDate}}
         </p>
         <p class="font-bold text-2xl my-2">{{title}}</p>
         <p class="text-gray-600">{{description}}</p>
@@ -18,10 +18,16 @@
 
 <script>
 import Label from '~/components/atoms/Label.vue'
+import convertDate from '~/lib/date.js'
 export default {
   props: ['eyecatch', 'title', 'description', 'category', 'slug', 'createdAt'],
   components: {
     Label,
+  },
+  computed: {
+    postDate() {
+      return convertDate.dateToMonthDay(this.createdAt)
+    },
   },
 }
 </script>

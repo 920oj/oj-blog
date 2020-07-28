@@ -23,7 +23,6 @@ export default {
     Sidebar,
   },
   async fetch() {
-    console.log(this.$route.params.slug)
     this.article = await fetchData.getArticle(
       this.$content,
       this.$route.params.slug

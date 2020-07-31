@@ -6,16 +6,20 @@
     </p>
     <h1 class="font-bold text-3xl">{{data.title}}</h1>
     <img :src="data.eyecatch" :alt="data.title" class="my-6" />
+    <SnsShare />
     <nuxt-content :document="data"></nuxt-content>
+    <SnsShare />
   </article>
 </template>
 
 <script>
 import Label from '~/components/atoms/Label.vue'
 import convertDate from '~/lib/date.js'
+import SnsShare from '~/components/atoms/Sns-share.vue'
+
 export default {
   props: ['data'],
-  components: { Label },
+  components: { Label, SnsShare },
   computed: {
     postDate() {
       return convertDate.dateToMonthDay(this.data.createdAt)
@@ -65,5 +69,12 @@ export default {
   @apply text-blue-600;
   @apply border-b-2;
   @apply border-blue-600;
+}
+
+.nuxt-content img {
+  @apply text-center;
+  @apply my-4;
+  @apply mx-auto;
+  max-height: 630px;
 }
 </style>

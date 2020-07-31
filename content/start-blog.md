@@ -7,6 +7,8 @@ category: 'お知らせ'
 
 こんにちは、[おーじぇい(@920OJ)](https://twitter.com/920OJ)です。
 
+![](https://pbs.twimg.com/media/EW03Dn_VcAElHJo?format=jpg&name=large)
+
 これまではてなブログを利用してきましたが、自分の勉強も兼ねてNuxt.jsで自作したものに移行しました。`nuxt/content`モジュールを使っています。
 
 ## 利用した技術

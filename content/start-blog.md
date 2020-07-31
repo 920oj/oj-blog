@@ -5,8 +5,6 @@ eyecatch: 'https://res.cloudinary.com/oj920/image/upload/v1595786485/blog/eyecat
 category: 'お知らせ'
 ---
 
-![](https://res.cloudinary.com/oj920/image/upload/v1595786485/blog/eyecatch_j1g4gg.jpg)
-
 こんにちは、[おーじぇい(@920OJ)](https://twitter.com/920OJ)です。
 
 これまではてなブログを利用してきましたが、自分の勉強も兼ねてNuxt.jsで自作したものに移行しました。`nuxt/content`モジュールを使っています。

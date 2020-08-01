@@ -21,6 +21,7 @@ export default {
   components: false,
   buildModules: [
     '@nuxtjs/tailwindcss',
+    ['@nuxtjs/google-analytics', { id: 'UA-119155278-4' }]
   ],
   modules: [
     '@nuxt/content',

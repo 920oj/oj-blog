@@ -10,7 +10,7 @@
     "serve": "nuxt serve"
   },
   "dependencies": {
-    "@nuxt/content": "^1.3.2",
+    "@nuxt/content": "^1.5.0",
     "nuxt": "^2.13.0"
   },
   "devDependencies": {

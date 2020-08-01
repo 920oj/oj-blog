@@ -1,6 +1,7 @@
 
 export default {
   mode: 'universal',
+  target: 'server',
   head: {
     title: process.env.npm_package_name || '',
     htmlAttrs: {

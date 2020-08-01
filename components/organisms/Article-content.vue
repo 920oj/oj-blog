@@ -6,16 +6,16 @@
     </p>
     <h1 class="font-bold text-3xl">{{data.title}}</h1>
     <img :src="data.eyecatch" :alt="data.title" class="my-6" />
-    <SnsShare />
+    <SnsShare :title="data.title" :slug="data.slug" />
     <nuxt-content :document="data"></nuxt-content>
-    <SnsShare />
+    <SnsShare :title="data.title" :slug="data.slug" />
   </article>
 </template>
 
 <script>
 import Label from '~/components/atoms/Label.vue'
 import convertDate from '~/lib/date.js'
-import SnsShare from '~/components/atoms/Sns-share.vue'
+import SnsShare from '~/components/molecules/Sns-share.vue'
 
 export default {
   props: ['data'],

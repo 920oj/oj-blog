@@ -30,6 +30,4 @@ export default {
   content: {
     apiPrefix: 'api',
   },
-  build: {
-  }
 }

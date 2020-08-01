@@ -1,5 +1,12 @@
 # oj-blog
 
+![](https://res.cloudinary.com/oj920/image/upload/v1595786485/blog/eyecatch_j1g4gg.jpg)
+
+OJ のブログサイトです。 `@nuxt/content` を使って、markdown 形式のファイルで管理できます。
+SNS での OGP を表示するために、universal モード(SSR)で実行しています。
+
+https://b.920oj.net/
+
 ## Build Setup
 
 ```bash

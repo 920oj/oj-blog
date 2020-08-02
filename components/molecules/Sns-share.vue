@@ -43,7 +43,7 @@ export default {
       return encodeURIComponent(`${this.title} - OJ Blog`)
     },
     url() {
-      return encodeURIComponent(`https://b.920oj.net/${this.slug}`)
+      return encodeURIComponent(`https://b.920oj.net/${this.slug}/`)
     },
   },
 }

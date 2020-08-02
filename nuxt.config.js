@@ -1,7 +1,7 @@
 
 export default {
   mode: 'universal',
-  target: 'server',
+  target: 'static',
   head: {
     title: process.env.npm_package_name || '',
     htmlAttrs: {
@@ -14,6 +14,10 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
+  },
+  generate: {
+    fallback: '404.html',
+    routes: ['/']
   },
   css: [
   ],

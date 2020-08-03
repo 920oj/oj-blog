@@ -35,17 +35,34 @@ export default {
   }
 }
 
+.nuxt-content {
+  font-family: -apple-system,Helvetica Neue,Helvetica,"メイリオ",Meiryo,sans-serif;
+  margin: 1.8em 0;
+  @screen md {
+    @apply text-lg;
+    line-height: 1.9;
+  }
+}
+
 .nuxt-content h2 {
   @apply border-b-2;
   @apply text-2xl;
   @apply font-bold;
   @apply my-6;
+
+  @screen md {
+    @apply text-4xl;
+  }
 }
 
 .nuxt-content h3 {
   @apply text-lg;
   @apply font-bold;
   @apply my-4;
+
+  @screen md {
+    @apply text-2xl;
+  }
 }
 
 .nuxt-content p {
@@ -63,6 +80,10 @@ export default {
   @apply list-disc;
   @apply list-inside;
   @apply ml-2;
+}
+
+.nuxt-content li {
+  @apply my-2;
 }
 
 .nuxt-content a {

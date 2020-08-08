@@ -32,11 +32,13 @@ export default {
 @media (min-width: 1024px) {
   .article-content {
     flex: 5;
+    overflow: hidden;
   }
 }
 
 .nuxt-content {
-  font-family: -apple-system,Helvetica Neue,Helvetica,"メイリオ",Meiryo,sans-serif;
+  font-family: -apple-system, Helvetica Neue, Helvetica, 'メイリオ', Meiryo,
+    sans-serif;
   margin: 1.8em 0;
   @screen md {
     @apply text-lg;

@@ -1,10 +1,12 @@
 <template>
-  <article class="article-content w-auto bg-white my-4 md:mx-4 p-4 rounded-md shadow-md box-border">
+  <article
+    class="article-content w-auto bg-white my-4 md:mx-4 p-4 rounded-md shadow-md box-border"
+  >
     <p>
-      <Label>{{data.category}}</Label>
-      {{postDate}}
+      <Label>{{ data.category }}</Label>
+      {{ postDate }}
     </p>
-    <h1 class="font-bold text-3xl">{{data.title}}</h1>
+    <h1 class="font-bold text-3xl">{{ data.title }}</h1>
     <img :src="data.eyecatch" :alt="data.title" class="my-6" />
     <SnsShare :title="data.title" :slug="data.slug" />
     <nuxt-content :document="data"></nuxt-content>
@@ -42,7 +44,7 @@ export default {
   margin: 1.8em 0;
   @screen md {
     @apply text-lg;
-    line-height: 1.9;
+    line-height: 1.6;
   }
 }
 

@@ -126,6 +126,8 @@ https://github.com/TCU-vRSA/fetch-tcu-node
 
 ![](https://i.imgur.com/m5lHblR.png)
 
+https://widget.tcu-vrsa.net/
+
 https://github.com/TCU-vRSA/TCU-Widget
 
 vRSAのサイトとは別に、オンライン講義で使うことができるウィジェットツール（PWAアプリ）を作成しました。オンラインだと学校のチャイムもなく、残り時間や今の時限がわからないという声を聞いたので、すぐに確認することが出来たらと思ったのと、講義内で使うサイト（出席管理システム、WebClassなど）がワンタップで開けたら良いなと思い作りました。

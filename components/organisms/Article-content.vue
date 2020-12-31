@@ -41,10 +41,11 @@ export default {
 .nuxt-content {
   font-family: -apple-system, Helvetica Neue, Helvetica, 'メイリオ', Meiryo,
     sans-serif;
-  margin: 1.8em 0;
+  margin: 36px 0;
+  font-size: 18px;
+  line-height: 36px;
   @screen md {
-    @apply text-lg;
-    line-height: 1.6;
+    margin: 36px;
   }
 }
 
@@ -53,6 +54,8 @@ export default {
   @apply text-2xl;
   @apply font-bold;
   @apply my-6;
+
+  padding-bottom: 18px;
 
   @screen md {
     @apply text-4xl;
@@ -70,7 +73,7 @@ export default {
 }
 
 .nuxt-content p {
-  @apply my-4;
+  margin: 36px 0;
 }
 
 .nuxt-content code {
